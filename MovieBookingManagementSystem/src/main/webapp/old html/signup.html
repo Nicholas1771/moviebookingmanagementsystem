@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=heebo">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="navbar">
+		<a class="navlink text" href="Home">Home</a>
+		<a class="navlink text" href="Showings">Showings</a>
+		<a class="navlink text" href="signup.html">Sign Up</a>
+		<div id="profile" class="navlink text">Profile
+			<div id="dropdown-content">
+				<div class="droplink"><a class="droplink" href="profile.html">My Profile</a></div>
+				<div class="droplink"><a class="droplink" href="tickets.html">My Tickets</a></div>
+				<div id="login" class="droplink" onclick="showModal()">Login</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="loginModal" class="modal">
+		<div class="modal-content">
+			<button id="close" onclick="closeModal()">&times;</button>
+			<h1 class="page_title text">Login</h1>
+	
+			<form class="form" action="Login" method="POST">
+				<div class="form_row">
+				<label class="form_item_left text" for="email">Email</label>
+				<input class="form_item_right text" type="email" placeholder="Enter Email" name="email" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<label class="form_item_left text" for="password">Password</label>
+				<input class="form_item_right text" type="password" placeholder="Enter Password" name="password" required>
+				</div>
+				<br>
+				<div class="login_row">
+				<button class="login text" type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<h1 class="page_title text">Sign Up</h1>
+		
+	<form class="signup_form" action="SignUp" method="POST">
+		<div class="form_row">
+		<label class="form_item_left" for="firstName">First Name</label>
+		<input class="form_item_right" placeholder="Enter First Name" name="firstName" required>
+		</div>
+		<br>
+		<div class="form_row">
+		<label class="form_item_left" for="lastName">Last Name</label>
+		<input class="form_item_right" type="text" placeholder="Enter Last Name" name="lastName" required>
+		</div>
+		<br>
+		<div class="form_row">
+		<label class="form_item_left" for="email">Email</label>
+		<input class="form_item_right" type="email" placeholder="Enter Email" name="email" required>
+		</div>
+		<br>
+		<div class="form_row">
+		<label class="form_item_left" for="password">Password</label>
+		<input class="form_item_right" type="password" placeholder="Enter Password" name="password" required>
+		</div>
+		<br>
+		<div class="form_row">
+		<label class="form_item_left" for="confirmPassword">Confirm Password</label>
+		<input class="form_item_right" type="password" placeholder="Confirm Password" name="confirmPassword" required>
+		</div>
+		<br>
+		<div class="signup_row">
+		<button class="signup text" type="submit">Sign Up</button>
+		</div>
+	</form>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>

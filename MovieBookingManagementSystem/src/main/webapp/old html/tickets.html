@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tickets</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=heebo">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="navbar">
+		<a class="navlink text" href="Home">Home</a>
+		<a class="navlink text" href="Showings">Showings</a>
+		<a class="navlink text" href="signup.html">Sign Up</a>
+		<div id="profile" class="navlink text">Profile
+			<div id="dropdown-content">
+				<div class="droplink"><a class="droplink" href="profile.html">My Profile</a></div>
+				<div class="droplink"><a class="droplink" href="tickets.html">My Tickets</a></div>
+				<div id="login" class="droplink" onclick="showModal()">Login</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="loginModal" class="modal">
+		<div class="modal-content">
+			<button id="close" onclick="closeModal()">&times;</button>
+			<h1 class="page_title text">Login</h1>
+	
+			<form class="form" action="Login" method="POST">
+				<div class="form_row">
+				<label class="form_item_left text" for="email">Email</label>
+				<input class="form_item_right text" type="email" placeholder="Enter Email" name="email" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<label class="form_item_left text" for="password">Password</label>
+				<input class="form_item_right text" type="password" placeholder="Enter Password" name="password" required>
+				</div>
+				<br>
+				<div class="login_row">
+				<button class="login text" type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<h1 class="page_title text">Tickets</h1>
+	<ol class="tickets_lists">
+		<li class="ticket_item">
+			<p class="showing text">Date: Friday, July 16 at 4:00 PM EST</p>
+			<p class="showing text">Theatre: 1</p>
+			<p class="showing text">Type: General</p>
+			<p class="showing text">Price: 13.99</p>
+			<button class="cancel showing text">Cancel</button>
+		</li>
+		<li class="ticket_item">
+			<p class="showing text">Date: Friday, July 16 at 4:00 PM EST</p>
+			<p class="showing text">Theatre: 1</p>
+			<p class="showing text">Type: General</p>
+			<p class="showing text">Price: 13.99</p>
+			<button class="cancel showing text">Cancel</button>
+		</li>
+		<li class="ticket_item">
+			<p class="showing text">Date: Friday, July 16 at 4:00 PM EST</p>
+			<p class="showing text">Theatre: 1</p>
+			<p class="showing text">Type: Child</p>
+			<p class="showing text">Price: 8.99</p>
+			<button class="cancel showing text">Cancel</button>
+			</li>
+		<li class="ticket_item">
+			<p class="showing text">Date: Friday, July 16 at 4:00 PM EST</p>
+			<p class="showing text">Theatre: 1</p>
+			<p class="showing text">Type: Child</p>
+			<p class="showing text">Price: 8.99</p>
+			<button onClick="cancelTicket()"class="cancel showing text">Cancel</button>
+		</li>
+	</ol>
+	
+	<script>
+		function cancelTicket() {
+			console.log("Cancelling ticket");
+		}
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>

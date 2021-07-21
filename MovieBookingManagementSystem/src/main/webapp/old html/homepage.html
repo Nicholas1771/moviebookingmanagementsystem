@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=heebo">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="navbar">
+		<a class="navlink text" href="homepage.html">Home</a>
+		<a class="navlink text" href="showings.html">Showings</a>
+		<a class="navlink text" href="signup.html">Sign Up</a>
+		<div id="profile" class="navlink text">Profile
+			<div id="dropdown-content">
+				<div class="droplink"><a class="droplink" href="profile.html">My Profile</a></div>
+				<div class="droplink"><a class="droplink" href="tickets.html">My Tickets</a></div>
+				<div id="login" class="droplink" onclick="showModal()">Login</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="loginModal" class="modal">
+		<div class="modal-content">
+			<button id="close" onclick="closeModal()">&times;</button>
+			<h1 class="page_title text">Login</h1>
+	
+			<form class="form" action="Login" method="POST">
+				<div class="form_row">
+				<label class="form_item_left text" for="email">Email</label>
+				<input class="form_item_right text" type="email" placeholder="Enter Email" name="email" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<label class="form_item_left text" for="password">Password</label>
+				<input class="form_item_right text" type="password" placeholder="Enter Password" name="password" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<button class="form_item_middle text" type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<h1 class="page_title text">Movies Playing</h1>
+	<div id="movies_div">
+		<a href=showings.html>
+			<div class="movie_container start">
+				<img class="movie_image" src="images/avengers.jpg" alt="Avengers">
+				<h2 class="movie_title text">Avengers</h2>
+			</div>
+			<div class="movie_container middle">
+				<img class="movie_image" src="images/spongebob.jpg" alt="Spongebob">
+				<h2 class="movie_title text">Spongebob</h2>
+			</div>
+			<div class="movie_container middle">
+				<img class="movie_image" src="images/terminator.jpg" alt="Terminator">
+				<h2 class="movie_title text">Terminator</h2>
+			</div>
+			<div class="movie_container middle">
+				<img class="movie_image" src="images/us.jpg" alt="Us">
+				<h2 class="movie_title text">Us</h2>
+			</div>
+			<div class="movie_container middle">
+				<img class="movie_image" src="images/black widow.jpg" alt="Black Widow">
+				<h2 class="movie_title text">Black Widow</h2>
+			</div>
+			<div class="movie_container end">
+				<img class="movie_image" src="images/jaws.jpg" alt="Jaws">
+				<h2 class="movie_title text">Jaws</h2>
+			</div>
+		</a>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>

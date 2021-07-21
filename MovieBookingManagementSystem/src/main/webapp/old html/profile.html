@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=heebo">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="navbar">
+		<a class="navlink text" href="Home">Home</a>
+		<a class="navlink text" href="Showings">Showings</a>
+		<a class="navlink text" href="signup.html">Sign Up</a>
+		<div id="profile" class="navlink text">Profile
+			<div id="dropdown-content">
+				<div class="droplink"><a class="droplink" href="profile.html">My Profile</a></div>
+				<div class="droplink"><a class="droplink" href="tickets.html">My Tickets</a></div>
+				<div id="login" class="droplink" onclick="showModal()">Login</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="loginModal" class="modal">
+		<div class="modal-content">
+			<button id="close" onclick="closeModal()">&times;</button>
+			<h1 class="page_title text">Login</h1>
+	
+			<form class="form" action="Login" method="POST">
+				<div class="form_row">
+				<label class="form_item_left text" for="email">Email</label>
+				<input class="form_item_right text" type="email" placeholder="Enter Email" name="email" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<label class="form_item_left text" for="password">Password</label>
+				<input class="form_item_right text" type="password" placeholder="Enter Password" name="password" required>
+				</div>
+				<br>
+				<div class="login_row">
+				<button class="login text" type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<h1 class="page_title text">Your Info</h1>
+	
+	<form class="form" action="/update" method="post">
+		<label for="email">Email</label>
+		<input type="email" value="nicholas@email.com"  name="email" required>
+		<br>
+		<label for="firstName">First Name</label>
+		<input type="text" value="Nicholas"  name="firstName" required>
+		<br>
+		<label for="lastName">Last Name</label>
+		<input type="text" value="Iozzo"  name="lastName" required>
+		<br>
+		<label for="password">Password</label>
+		<input type="password" value="password" name="password" required>
+		<br>
+		<button type="submit">Update</button>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Showings</title>
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=heebo">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="navbar">
+		<a class="navlink text" href="homepage.html">Home</a>
+		<a class="navlink text" href="showings.html">Showings</a>
+		<a class="navlink text" href="signup.html">Sign Up</a>
+		<div id="profile" class="navlink text">Profile
+			<div id="dropdown-content">
+				<div class="droplink"><a class="droplink" href="profile.html">My Profile</a></div>
+				<div class="droplink"><a class="droplink" href="tickets.html">My Tickets</a></div>
+				<div id="login" class="droplink" onclick="showModal()">Login</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="loginModal" class="modal">
+		<div class="modal-content">
+			<button id="close" onclick="closeModal()">&times;</button>
+			<h1 class="page_title text">Login</h1>
+	
+			<form class="form" action="Login" method="POST">
+				<div class="form_row">
+				<label class="form_item_left text" for="email">Email</label>
+				<input class="form_item_right text" type="email" placeholder="Enter Email" name="email" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<label class="form_item_left text" for="password">Password</label>
+				<input class="form_item_right text" type="password" placeholder="Enter Password" name="password" required>
+				</div>
+				<br>
+				<div class="form_row">
+				<button class="form_item_middle text" type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<h1 class="page_title text">Showings</h1>
+	<div class="movie_showings">
+		<div class="movie">
+			<div class="movie_info">
+				<div class="movie_left movie">
+					<img class="movie_image" src="images/avengers.jpg" alt="Avengers">
+				</div>
+				<div class="movie_right movie">
+					<h2 class="title text">Avengers</h2>
+					<h2 class="description_label summary text">Summary</h2>
+					<p class="movie_description summary text">S.H.I.E.L.D. has
+						located the mysterious Tesseract device and the Army's super
+						soldier Captain America. The Tesseract is actually a gateway to an
+						entirely new world called Asgard. A mysterious being known as Loki
+						arrives on earth and immediately assumes that he can rule all
+						human beings. But that irks S.H.I.E.L.D. director Nick Fury the
+						wrong way. As Loki escapes with the Tesseract, Nick Fury believes
+						this is an act of war against Earth. His only hope is to assemble
+						an actual team of super heroes. Dr. Bruce Banner, who turns into
+						an enormous green rage monster known as the Hulk. Tony Stark and
+						his venerable Iron Man armor. Captain America, the Stark
+						Enterprises created super soldier. Thor, the god of thunder,
+						protector of Earth and his home planet of Asgard, and Loki's
+						brother. Master assassins Hawkeye and Natasha Romanoff. Together
+						they will become a team to take on an attack that will call them
+						to become the greatest of all time.</p>
+				</div>
+			</div>
+			<h2>Showings for Avengers</h2>
+			<ol class="showing_list">
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 4:00 PM EST</p>
+					<p class="showing text">Theatre: 4</p> <a href="checkout.html"
+					class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 7:00 PM EST</p>
+					<p class="showing text">Theatre: 1</p> <a href="checkout.html"
+					class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 8:00 PM EST</p>
+					<p class="showing text">Theatre: 4</p> <a href="checkout.html"
+					class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 9:00 PM EST</p>
+					<p class="showing text">Theatre: 2</p> <a href="checkout.html"
+					class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Saturday, July 16 at 11:00 AM EST</p>
+					<p class="showing text">Theatre: 4</p> <a href="checkout.html"
+					class="buy text">Buy</a>
+				</li>
+			</ol>
+		</div>
+		<div class="movie">
+			<div class="movie_info">
+				<div class="movie_left movie">
+					<img class="movie_image" src="images/black widow.jpg"
+						alt="Black Widow">
+				</div>
+				<div class="movie_right movie">
+					<h2 class="title text">Black Widow</h2>
+					<h2 class="description_label summary text">Summary</h2>
+					<p class="movie_description summary text">In Marvel Studios’
+						action-packed spy thriller “Black Widow,” Natasha Romanoff aka
+						Black Widow confronts the darker parts of her ledger when a
+						dangerous conspiracy with ties to her past arises. Pursued by a
+						force that will stop at nothing to bring her down, Natasha must
+						deal with her history as a spy and the broken relationships left
+						in her wake long before she became an Avenger.</p>
+				</div>
+			</div>
+			<h2>Showings for Black Widow</h2>
+			<ol class="showing_list">
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 4:00 PM EST</p>
+					<p class="showing text">Theatre: 3</p> 
+					<a href="checkout.html" class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 7:00 PM EST</p>
+					<p class="showing text">Theatre: 5</p> 
+					<a href="checkout.html" class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 8:00 PM EST</p>
+					<p class="showing text">Theatre: 3</p> 
+					<a href="checkout.html" class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Friday, July 16 at 9:00 PM EST</p>
+					<p class="showing text">Theatre: 6</p> 
+					<a href="checkout.html" class="buy showing text">Buy</a>
+				</li>
+				<li class="showing_item">
+					<p class="showing text">Date: Saturday, July 16 at 11:00 AM EST</p>
+					<p class="showing text">Theatre: 5</p> 
+					<a href="checkout.html" class="buy text">Buy</a>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

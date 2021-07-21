@@ -1,0 +1,675 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+#navbar {
+	width: 100%;
+	height: 40px;
+	background: white;
+	border-bottom: 1px solid #D3D3D3;
+	padding-bottom: 5px;
+}
+
+#checkout_showing {
+	width: 90%;
+	margin: auto;
+	background: #5AB9EA;
+	border-radius: 20px;
+	height: 80px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#checkout_div {
+	height: 800px;
+	padding: 20px 3% 20px 3%;
+	background: #5AB9EA;
+	color: white;
+	width: 95%;
+	margin: auto;
+}
+
+#purchase {
+	margin: 1% 0 1% 42%;;
+	float: left;
+}
+
+#profile{
+	display: inline-block;
+}
+
+#profile:hover #dropdown-content {
+  	display: block;
+}
+
+#dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#loginStatus {
+	color: red;
+	font-size: 30px;
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	height: 50px;
+}
+
+#signupStatus {
+	font-size: 30px;
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	height: 50px;
+}
+
+#profileStatus {
+	font-size: 30px;
+	width: 80%;
+	text-align: center;
+	margin: 20px auto 0 auto;
+	height: 50px;
+}
+
+#close {
+	width: 25px;
+	height: 25px;
+	float: right;
+	color: white;
+	font-size: 30px;
+	line-height: 0;
+	padding: 0;
+	background: red;
+	border: none;
+}
+
+#close:hover {
+	background: orange;
+}
+
+#filters {
+	height: 800px;
+	width: 90%;
+	margin: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#filter_apply {
+	width: 100px;
+	margin: auto;
+	display: block;
+}
+
+#movies_home {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.options {
+	height: 40%;
+	width: 95%;
+	margin: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 40%;
+  padding-bottom: 20px;
+}
+
+.droplink {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	background: white;
+	display: block;
+}
+
+.droplink:hover {
+	color: rgb(0, 162, 232);
+}
+
+.text {
+	font-family: "Heebo", sans-serif;
+}
+
+.navlink {
+	height: 100%;
+	width: 150px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+}
+
+.navlink_left:nth-child(1) {
+	border-right: 1px solid #D3D3D3;
+}
+
+.navlink_right:nth-child(4) {
+	border-right: 1px solid #D3D3D3;
+}
+
+.navlink_left {
+	float: left;
+}
+
+.navlink_right {
+	float: right;
+}	
+
+.navlink:hover {
+	color: rgb(0, 162, 232);
+}
+
+.page_title {
+	font-size: 50px;
+	text-align: center;
+	height: 60px;
+}
+
+.movie_container {
+	width: 405px;
+	height: 700px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.movie_row {
+	height: 600px;
+}
+
+.movie_container:hover {
+	color: #5AB9EA;
+}
+
+.movie_showings {
+	width: 95%;
+	margin: auto;
+}
+
+.movie_info {
+	height: 600px;
+	background: #5AB9EA;
+	color: white;
+	width: 100%;
+}
+
+.movie {
+	width: 100%;
+}
+
+.movie_left_checkout {
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+.movie_right_checkout {
+	float: left;
+	width: 70%;
+	height: 600px;
+	padding: 3%;
+}
+
+.movie_image_checkout {
+	width: 100%;
+	height: 100%;
+}
+
+.movie_image_home {
+	width: 100%;
+	height: 600px;
+}
+
+.movie_image_showing {
+	width: 100%;
+	height: 100%;
+}
+
+.movie_title {
+	width: 100%;
+	height: 20%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.movie_left {
+	width: 405px;
+	height: 100%;
+	float: left;
+}
+
+.movie_right {
+	height: 100%;
+	padding: 1% 3% 0 3%;
+	float: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.title {
+	font-size: 40px;
+}
+
+.summary {
+	width: 100%;
+	font-size: 25px;
+	overflow: hidden;
+}
+
+.showing_list {
+	width: 95%;
+	margin: auto;
+	padding-inline-start: 0;
+}
+
+.showing_item {
+	border-radius: 20px;
+	height: 80px;
+	list-style-type: none;
+	background: #5AB9EA;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	color: white;
+}
+
+.showing {
+	float: left;
+	font-size: 25px;
+	width: 33%;
+}
+
+.ticket {
+	float: left;
+	font-size: 25px;
+	width: 33%;
+}
+
+.tickets_lists {
+	width: 80%;
+	margin: auto;
+	padding-inline-start: 0;
+}
+
+.tickets_showing {
+	font-size: 30px;
+	margin-left: 5%;
+}
+
+.signup_form {
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 3%;
+	margin-left: 20%;
+	margin-right: 20%;
+	width: 60%;
+}
+
+.form {
+	border: 1px solid black;
+	border-radius: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 5%;
+}
+
+.checkout_form {
+	border: 1px solid white;
+	border-radius: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 5%;
+	height: 600px;
+}
+
+.form_item_left {
+	font-size: 30px;
+	float: left;
+	width: 50%;
+}
+
+.form_item_right {
+	font-size: 30px;
+	float: right;
+	width: 50%;
+	border-radius: 20px;
+	border: 0;
+	padding-left: 20px;
+}
+
+.form_item_right:focus {
+	outline: none;
+}
+
+
+.form_item_middle {
+	float: left;
+	margin-left: 42%;
+}
+
+.form_row {
+	height: 50px;
+	width: 100%;
+	margin: auto;
+}
+
+.signup_row {
+	height: 80px;
+	width: 100%;
+}
+
+.login_row {
+	height: 80px;
+	padding-top: 15px;
+}
+
+.login_div {
+	width: 70%;
+	margin: 0 auto 0 auto;
+	border-radius: 20px;
+	background: #5AB9EA;
+	color: white;
+	padding: 50px;
+}
+
+.signup_div {
+	width: 50%;
+	padding: 50px;
+	margin: 100px auto 0 auto;
+	border-radius: 20px;
+	background: #5AB9EA;
+	color: white;
+}
+
+.ticket_item {
+	border: 1px solid black;
+	height: 80px;
+	color: black;
+	list-style-type: none;
+	margin: 20px 0 20px 0;
+	padding-left: 3%;
+}
+
+.ticket_showing {
+	width: 33%;
+	float: left;
+	font-size: 25px;
+}
+
+.ticket_showing_info {
+	width: 90%;
+	margin: auto;
+	height: 100px;
+}
+
+.checkout_showing_item {
+	display: inline-block;
+	font-size: 30px;
+	color: white;
+	margin: 0 20px 0 20px;
+	line-height: 75px;
+}
+
+.total {
+	font-size: 30px;
+	float: left;
+}
+
+.showings_title {
+	font-size: 25px;
+	width: 90%;
+	height: 30px;
+	margin-left: 3%;
+}
+
+.search_bar {
+	width: 50%;
+	height: 50px;
+	margin: 20px auto 20px auto;
+}
+
+.checkout_info {
+	width: 95%;
+	margin: auto;
+	height: 600px;
+	background: #5AB9EA;
+	color: white;
+}
+
+.search_input {
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	border-radius: 20px;
+	padding-left: 20px;
+}
+
+.search_input:focus {
+	outline: none;
+}
+
+.filter_row {
+	width: 100%;
+	height: 30px;
+}
+
+.filter_title {
+	font-size: 20px;
+}
+
+.filter_right {
+	float: right;
+}
+
+.filter_left {
+	float: left;
+	font-size: 20px;
+}
+
+.search_form_showings {
+	height: 100%;
+	width: 90%;
+	float: left;
+}
+
+.search_form_home {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.movie_page_div {
+	height: 1000px;
+	width: 90%;
+	margin: auto;
+}
+
+.movie_page_image {
+	height: 100%;
+	width: 675px;
+	float: left;
+}
+
+.title_link {
+	text-decoration: none;
+	color: white;
+}
+
+.movie_page_info {
+	height: 100%;
+	float: none;
+	overflow: hidden;
+	padding: 0 5% 0 5%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.movie_page_info_item {
+	width: 100%;
+	font-size: 30px;
+	overflow: hidden;
+}
+
+.profile_div {
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+	border-style: solid;
+	border-width: thin;
+	border-color: white;
+	border-radius: 25px;
+	padding: 100px 5% 100px 5%;
+}
+
+.profile {
+	float: left;
+	width: 33%;	
+	font-size: 25px;
+	display: block;
+	line-height: 40px;
+}
+
+.profile_item {
+	height: 80px;
+	padding: 15px 0 15px 0;
+}
+
+.change {
+    width: 200px;
+    float: right;
+    margin-right: 15px;
+}
+
+.deactivate {
+    width: 350px;
+    margin: 40px auto 0 auto;
+    display: block;
+}
+
+.filter {
+	float: right;
+	width: 10%;
+	display: block;
+	margin-left: 15px;
+}
+
+.search {
+	float: right;
+	width: 150px;
+}
+
+.span {
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    padding-right:10px;
+}
+
+.login {
+    width: 150px;
+    display: block;
+	margin: auto;
+}
+
+.buy {
+    margin: 15px 0 0 0;
+    width: 8%;
+    float: right;
+    margin-right: 15px;
+}
+
+.signup {
+    width: 150px;
+	margin: auto;
+	display: block;
+}
+
+.see_showings {
+    width: 300px;
+	display: block;
+}
+
+.cancel {
+	margin: 15px 0 0 0;
+    width: 200px;
+    float: right;
+    margin-right: 15px;
+}
+
+.button {
+	height: 50px;
+	cursor: pointer;
+	font-size: 30px;
+	text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.orange {
+	background: rgb(255, 127, 39);
+}
+
+.orange:hover {
+	background: #FF9900;
+}
+
+.red {
+	background: rgb(237, 28, 36);
+}
+
+.red:hover {
+	background: rgb(241, 80, 88);
+}
+
+.blue {
+	background: rgb(0, 162, 232);
+}
+
+.blue:hover {
+	background: rgb(47, 192, 255);
+}
+
+.button:active {
+	border: 1px solid black;
+}
